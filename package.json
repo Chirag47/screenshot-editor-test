@@ -1,10 +1,9 @@
 {
-  "name": "lambdatest-screenshot-editor",
-  "version": "1.0.0",
-  "description": "lambdatest-screenshot-editor",
+  "name": "screenshot-editor-test",
+  "version": "1.1.7",
+  "description": "canvas editor",
   "author": "errorr404",
   "license": "MIT",
-  "repository": "",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
@@ -57,5 +56,11 @@
   },
   "files": [
     "dist"
+  ],
+  "directories": {
+    "example": "example"
+  },
+  "keywords": [
+    "image-editor"
   ]
 }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Eraser</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Blisk---Screenshot-Editor-Copy" transform="translate(-159.000000, -501.000000)" fill="#979EAB" fill-rule="nonzero">
+            <g id="Group" transform="translate(158.000000, 90.000000)">
+                <g id="Eraser" transform="translate(1.000000, 411.000000)">
+                    <path d="M13.5534442,3 L18,7.4784689 L13.6817102,12 L9,7.284689 L13.5534442,3 Z M20.8753906,7.05366492 L13.9935073,0.133507853 C13.8164814,-0.0445026178 13.5509425,-0.0445026178 13.3960448,0.133507853 L2.13276945,10.9253927 C2.04425648,11.0143979 2,11.1256545 2,11.236911 C2,11.3481675 2.04425648,11.4816754 2.13276945,11.5484293 L7.68695826,16.8887435 C7.77547123,16.9777487 7.88611244,17 7.99675365,17 L11.6921701,17 C11.8028113,17 11.9134525,16.9554974 12.0019655,16.8664921 L20.8753906,7.63219895 C21.0524166,7.4986911 21.0302883,7.23167539 20.8753906,7.05366492 Z" id="Shape"></path>
+                    <rect id="Rectangle-path" x="15" y="16" width="1" height="1"></rect>
+                    <rect id="Rectangle-path" x="0" y="16" width="1" height="1"></rect>
+                    <rect id="Rectangle-path" x="3" y="16" width="1" height="1"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

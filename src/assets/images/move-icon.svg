@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Move</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Blisk---Screenshot-Editor-Copy" transform="translate(-159.000000, -90.000000)" fill="#979EAB" fill-rule="nonzero">
+            <g id="Group" transform="translate(158.000000, 90.000000)">
+                <g id="Move" transform="translate(1.000000, 0.000000)">
+                    <path d="M6.75308642,7.6 L5.86419753,11 L3,3 L11,5.8 L7.44444444,6.9 C7.14814815,7 6.85185185,7.3 6.75308642,7.6 Z M14.300189,6.52119701 C14.700081,6.42144638 15,6.02244389 15,5.6234414 C15,5.2244389 14.700081,4.82543641 14.300189,4.62593516 L1.30369968,0.0374064838 C1.00378069,-0.0623441397 0.603888712,0.0374064838 0.303969726,0.336658354 C0.00405074129,0.635910224 -0.0959222538,1.03491272 0.104023736,1.33416459 L4.9027275,14.3017456 C5.00270049,14.7007481 5.30261948,15 5.80248445,15 C6.20237643,15 6.60226842,14.7007481 6.70224141,14.3017456 L8.30180933,8.31670823 L14.300189,6.52119701 Z" id="Shape"></path>
+                    <polygon id="Shape" points="17 15 17 16 20 14 17 12 17 13 15 13 15 11 16 11 14 8 12 11 13 11 13 13 11 13 11 12 8 14 11 16 11 15 13 15 13 17 12 17 14 20 16 17 15 17 15 15"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

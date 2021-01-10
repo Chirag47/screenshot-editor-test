@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="20px" viewBox="0 0 18 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Bucket</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Blisk---Screenshot-Editor-Copy" transform="translate(-160.000000, -296.000000)" fill="#979EAB" fill-rule="nonzero">
+            <g id="Group" transform="translate(158.000000, 90.000000)">
+                <g id="Bucket" transform="translate(2.000000, 206.000000)">
+                    <path d="M2.34,1.18 L4.84,2.62 L3.82,4.36 L1.32,2.92 L2.34,1.18 Z M14.56,13.64 C15.78,13.64 16.78,12.58 16.78,11.42 C16.78,9.96 14.56,6.98 14.56,6.98 C14.56,6.98 12.34,9.96 12.34,11.42 C12.34,12.58 13.32,13.64 14.56,13.64 Z M0.12,17.54 C0.12,16.62 0.86,15.88 1.8,15.88 L16.24,15.88 C17.16,15.88 17.92,16.62 17.92,17.54 C17.92,18.46 17.18,19.2 16.24,19.2 L1.78,19.2 C0.86,19.2 0.12,18.46 0.12,17.54 Z M6.36,0 L12.74,3.66 L15.62,5.32 L12.86,6.06 L8.3,13.96 L0.8,9.62 L6.36,0 Z M7.02,2.72 L3.4,8.96 L9.08,9.12 L11.34,5.22 L7.02,2.72 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

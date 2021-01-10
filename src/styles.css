@@ -1,8 +1,193 @@
-/* add css styles here (optional) */
-
-.test {
-  display: inline-block;
-  margin: 2em auto;
-  border: 2px solid #000;
-  font-size: 2em;
+.screenshotEditor_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: initial;
 }
+.screenshotEditorImgWrapper {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  overflow: scroll;
+}
+.screenshotEditorMenu .screenshotEditorMenu__item {
+  display: block;
+  text-align: center;
+  width: 100%;
+  border: 0;
+  background: none;
+  padding: 20px;
+  cursor: pointer;
+  position: relative;
+}
+.screenshotEditorMenu .screenshotEditorMenu__item span{
+  font-size: 20px;
+}
+.screenshotEditorMenu_left {
+  width: 60px;
+  border-right: 1px solid #dee2e6 !important;
+}
+.screenshotEditorMenu .screenshotEditorMenu__item:hover {
+  background: #f5f5f5;
+}
+
+.screenshotEditorMenu
+  .screenshotEditorMenu__item.screenshotEditorMenu__item--active {
+  background-color: #5e77ff;
+}
+.screenshotEditorMenu
+  .screenshotEditorMenu__item.screenshotEditorMenu__item--active
+  .screenshotEditorMenu__item__icon {
+  filter: invert(1) brightness(100);
+}
+.screenshotEditorArea {
+  position: relative;
+  border-left: 1px solid #f7f7f7;
+  border-bottom: 1px solid #f7f7f7;
+  height: 480px;
+  cursor: crosshair;
+}
+
+.screenshotEditorImgWrapper::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.screenshotEditorImgWrapper::-webkit-scrollbar-track {
+  background: #f4f5f9;
+}
+.screenshotEditorImgWrapper::-webkit-scrollbar-thumb {
+  background: #dbdeec;
+  border-radius: 10px;
+}
+.screenshotEditorImgWrapper::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.screenshotEditor__bottom__btns .screenshotEditor__bottom__btn {
+  border: 0;
+  font-size: 12px;
+  color: inherit;
+  padding: 10px 20px;
+  border-radius: 4px;
+  height: 38px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.screenshotEditor__bottom__btns > .screenshotEditor__bottom__btn:first-child {
+  margin-left: 0;
+}
+.screenshotEditor__bottom__btns > .screenshotEditor__bottom__btn:last-child {
+  margin-right: 0;
+}
+.screenshotEditor__bottom__btns .screenshotEditor__bottom__btn--iconbtn {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.screenshotEditor__bottom__btns .screenshotEditor__bottom__btn--danger {
+  background-color: #ff6565;
+  color: #ffffff;
+}
+.screenshotEditor__bottom__btns .screenshotEditor__bottom__btn--primary {
+  background-color: #5e77ff;
+  color: #ffffff;
+}
+.screenshotEditor__bottom__btns .screenshotEditor__bottom__btn--white-bg-icon {
+  background-color: #ffffff;
+}
+.screenshotEditor__bottom__btns .screenshotEditor__bottom__btn--outline-black {
+  color: #000;
+  border: 1px solid;
+  background: #fff;
+}
+
+.screenshotEditor__bottom__ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.screenshotEditor__bottom__ul > li {
+  font-size: 11px;
+  color: #3c446b;
+  display: inline-block;
+  margin-right: 15px;
+}
+.screenshotEditor__bottom__ul > li > img {
+  display: inline-block;
+  margin-right: 7px;
+}
+.screenshotEditor__bottom__ul > li > span {
+  color: #9b9b9b;
+}
+.screenshotEditorArea__finalBottomcanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /* display: none; */
+}
+.screenshotEditorArea__canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.screenshotEditorArea__editorCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.screenshotEditorArea__permanentBottomcanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.screenshotEditor__text {
+  position: absolute;
+  z-index: 3;
+  height: 20px;
+  resize: both;
+  border: 3px solid #000;
+  border-radius: 6px;
+}
+.screenshotEditorMenu__item__icon__colorWrapper {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 3;
+  border: 2px solid #fff;
+  background-color: #ccc;
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.18);
+  padding: 1px 2px;
+  display: none;
+}
+.screenshotEditorMenu__item__icon__colorWrapper__colorBox {
+  padding: 10px;
+  display: block;
+  border: 1px solid #ccc;
+  display: block;
+  margin: 5px 2px;
+}
+.screenshotEditorMenu__item__icon__colorWrapper__colorBox--active{
+  margin: 5px 0;
+}
+
+.screenshotEditorMenu__item__icon__colorWrapper:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -8px;
+  z-index: 4;
+  top: 20px;
+  width: 0px;
+  height: 0px;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right: 7px solid white;
+}
+
+.screenshotEditorMenu__item:hover .screenshotEditorMenu__item__icon__colorWrapper{display: block;}
