@@ -322,6 +322,7 @@ class Editor extends React.Component {
   };
   // add textarea
   handleAddText = e => {
+    const { onDrawingEnd } = this.props
     const { textValue, startX, startY } = this.state
     if (e.key === 'Enter') {
       const ctx = this.editorCanvasRef.current.getContext('2d')
@@ -337,6 +338,12 @@ class Editor extends React.Component {
         startX: null,
         startY: null
       })
+      // delay, state updation is taking time here. 
+      setTimeout(() => {
+        this.getFinalCanvasUrl(function name(params) {
+          onDrawingEnd(params)
+        })
+      },1000)
     }
   };
   componentDidMount() {
