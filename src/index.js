@@ -56,6 +56,29 @@ class Editor extends React.Component {
       screenshotControls: configs ? [...editorControls] : []
     }
   }
+  fillTextOnCanvas = (ctx) => {
+    const { textValue, startX, startY } = this.state
+    let lines = textValue.split('\n');
+    let offset = 0;
+    ctx.textBaseline = 'top'
+    ctx.textAlign = 'left'
+    ctx.font = '14px Arial'
+    ctx.fillStyle = this.state.drawingColor;
+    let textEditor = document.querySelector('.screenshotEditor__text');
+    if(textEditor){
+      let charWidth = 8, textEditorWidth = textEditor.offsetWidth - 10, 
+        charLimit = textEditorWidth/charWidth;
+      for(let line of lines){
+        let subLines = Math.ceil(line.length/charLimit);
+        for(let i=0;i<subLines;i++){
+          let subLine = line.substr(i*charLimit,charLimit);
+          ctx.fillText(subLine, startX, startY+offset)
+          offset += 20
+        }
+        offset += 10;
+      }
+    }
+  }
   drawRectangle = e => {
     const { startX, startY, canvasWidth, canvasHeight } = this.state
     const ctx = this.editorCanvasRef.current.getContext('2d')
@@ -149,10 +172,7 @@ class Editor extends React.Component {
     ctx.fillStyle = drawingColor
 
     if (drawingShape === 'text') {
-      ctx.textBaseline = 'top'
-      ctx.textAlign = 'left'
-      ctx.font = '20px Arial'
-      ctx.fillText(textValue, startX, startY)
+      this.fillTextOnCanvas(ctx);
       this.setState({ textValue: '', hideTextBox: false })
     } else {
       this.setState({ hideTextBox: true })
@@ -324,12 +344,9 @@ class Editor extends React.Component {
   handleAddText = e => {
     const { onDrawingEnd } = this.props
     const { textValue, startX, startY } = this.state
-    if (e.key === 'Enter') {
-      const ctx = this.editorCanvasRef.current.getContext('2d')
-      ctx.textBaseline = 'top'
-      ctx.textAlign = 'left'
-      ctx.font = '20px Arial'
-      ctx.fillText(textValue, startX, startY)
+    if (e.keyCode === 13 && !e.shiftKey) {
+      const ctx = this.editorCanvasRef.current.getContext('2d');
+      this.fillTextOnCanvas(ctx);
       this.copyEditorCanvasToFinalCanvas()
       this.saveTheCurrentImageInstance()
       this.clearEditorCanvas()
@@ -521,6 +538,7 @@ class Editor extends React.Component {
               />
               <canvas
                 ref={this.editorCanvasRef}
+                style={{cursor: this.state.drawingShape == "text" ? 'text' : 'crosshair'}}
                 className='screenshotEditorArea__editorCanvas'
                 width={canvasWidth}
                 height={canvasHeight}
