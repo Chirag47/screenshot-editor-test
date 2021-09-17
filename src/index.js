@@ -66,12 +66,23 @@ class Editor extends React.Component {
     ctx.fillStyle = this.state.drawingColor;
     let textEditor = document.querySelector('.screenshotEditor__text');
     if(textEditor){
-      let charWidth = 8, textEditorWidth = textEditor.offsetWidth - 10, 
+      let charWidth = 7, textEditorWidth = textEditor.offsetWidth - 10, 
         charLimit = textEditorWidth/charWidth;
       for(let line of lines){
-        let subLines = Math.ceil(line.length/charLimit);
-        for(let i=0;i<subLines;i++){
-          let subLine = line.substr(i*charLimit,charLimit);
+        let words = line.split(" ");
+        let subLines = [''];
+        let k=0;
+        for(let i=0;i<words.length;i++){
+          let word = words[i];
+          if(subLines[k].length + word.length + 1 <= charLimit){
+            subLines[k] = subLines[k] + ' ' + word;
+          } else {
+            k++;
+            subLines[k] = word;
+          }
+        }
+        for(let i=0;i<subLines.length;i++){
+          let subLine = subLines[i];
           ctx.fillText(subLine, startX, startY+offset)
           offset += 20
         }
