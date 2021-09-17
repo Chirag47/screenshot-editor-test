@@ -70,9 +70,9 @@ class Editor extends React.Component {
         charLimit = textEditorWidth/charWidth;
       for(let line of lines){
         let words = line.split(" ");
-        let subLines = [''];
+        let subLines = [words[0]];
         let k=0;
-        for(let i=0;i<words.length;i++){
+        for(let i=1;i<words.length;i++){
           let word = words[i];
           if(subLines[k].length + word.length + 1 <= charLimit){
             subLines[k] = subLines[k] + ' ' + word;
